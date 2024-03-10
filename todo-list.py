@@ -31,10 +31,22 @@ def editar_tarefa():
 root = tk.Tk()
 root.title("To-Do List")
 
-frame = tk.Frame(root)
+# Definir cor padrão
+cor_principal = "#121212"
+cor_secundaria = "#fff"
+
+frame = tk.Frame(root, bg=cor_secundaria)
 frame.pack(pady=10)
 
-lista_tarefas = tk.Listbox(frame, width=40, height=10, bg="lightgrey")
+lista_tarefas = tk.Listbox(
+    frame,
+    width=40,
+    height=10,
+    bg="lightgrey",
+    bd=0,
+    selectbackground=cor_principal,
+    font=("Roboto", 12),
+)
 lista_tarefas.pack(side=tk.LEFT, fill=tk.BOTH)
 
 scrollbar = tk.Scrollbar(frame)
@@ -43,16 +55,37 @@ scrollbar.pack(side=tk.RIGHT, fill=tk.BOTH)
 lista_tarefas.config(yscrollcommand=scrollbar.set)
 scrollbar.config(command=lista_tarefas.yview)
 
-entrada = tk.Entry(root, width=40)
+entrada = tk.Entry(root, width=40, font=("Roboto", 12))
 entrada.pack(pady=10)
 
-botao_adicionar = tk.Button(root, text="Adicionar Tarefa", command=adicionar_tarefa)
+botao_adicionar = tk.Button(
+    root,
+    text="Adicionar Tarefa",
+    command=adicionar_tarefa,
+    bg=cor_principal,
+    fg="white",
+    font=("Roboto", 12, "bold"),
+)
 botao_adicionar.pack(side=tk.LEFT, padx=5)
 
-botao_remover = tk.Button(root, text="Remover Tarefa", command=remover_tarefa)
+botao_remover = tk.Button(
+    root,
+    text="Remover Tarefa",
+    command=remover_tarefa,
+    bg=cor_principal,
+    fg="white",
+    font=("Roboto", 12, "bold"),
+)
 botao_remover.pack(side=tk.LEFT, padx=5)
 
-botao_editar = tk.Button(root, text="Editar Tarefa", command=editar_tarefa)
+botao_editar = tk.Button(
+    root,
+    text="Editar Tarefa",
+    command=editar_tarefa,
+    bg=cor_principal,
+    fg="white",
+    font=("Roboto", 12, "bold"),
+)
 botao_editar.pack(side=tk.LEFT, padx=5)
 
 root.mainloop()
