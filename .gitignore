@@ -1,0 +1,26 @@
+# Arquivos gerados automaticamente
+__pycache__/
+
+# Arquivo de configuração do ambiente virtual
+venv/
+
+# Arquivos de log
+*.log
+
+# Arquivos temporários
+*.tmp
+
+# Arquivos de backup
+*~
+
+# Arquivos de compilação
+*.pyc
+*.pyo
+*.pyd
+
+# Arquivos de configuração
+.DS_Store
+*.ini
+
+# Arquivos de ambiente
+.env
