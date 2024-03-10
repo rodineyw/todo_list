@@ -34,4 +34,4 @@ Espero que este artigo tenha sido útil para aqueles interessados em desenvolver
 
 *Legal Operations | Formando em Internet das Coisas.*
 
-LinkedIn: [https://www.linkedin.com/in/rodineyw/]
+[LinkedIn](https://www.linkedin.com/in/rodineyw/)
