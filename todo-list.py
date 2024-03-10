@@ -31,9 +31,10 @@ def editar_tarefa():
 root = tk.Tk()
 root.title("To-Do List")
 
-# Definir cor padrão
-cor_principal = "#121212"
-cor_secundaria = "#fff"
+# Paleta de cores
+cor_principal = "#3498db"
+cor_secundaria = "#acf0f1"
+cor_botao = "#2ecc71"
 
 frame = tk.Frame(root, bg=cor_secundaria)
 frame.pack(pady=10)
@@ -46,6 +47,7 @@ lista_tarefas = tk.Listbox(
     bd=0,
     selectbackground=cor_principal,
     font=("Roboto", 12),
+    highlightthickness=0,
 )
 lista_tarefas.pack(side=tk.LEFT, fill=tk.BOTH)
 
@@ -62,9 +64,10 @@ botao_adicionar = tk.Button(
     root,
     text="Adicionar Tarefa",
     command=adicionar_tarefa,
-    bg=cor_principal,
+    bg=cor_botao,
     fg="white",
     font=("Roboto", 12, "bold"),
+    relief=tk.FLAT,
 )
 botao_adicionar.pack(side=tk.LEFT, padx=5)
 
@@ -72,9 +75,10 @@ botao_remover = tk.Button(
     root,
     text="Remover Tarefa",
     command=remover_tarefa,
-    bg=cor_principal,
+    bg=cor_botao,
     fg="white",
     font=("Roboto", 12, "bold"),
+    relief=tk.FLAT,
 )
 botao_remover.pack(side=tk.LEFT, padx=5)
 
@@ -82,9 +86,10 @@ botao_editar = tk.Button(
     root,
     text="Editar Tarefa",
     command=editar_tarefa,
-    bg=cor_principal,
+    bg=cor_botao,
     fg="white",
     font=("Roboto", 12, "bold"),
+    relief=tk.FLAT,
 )
 botao_editar.pack(side=tk.LEFT, padx=5)
 
