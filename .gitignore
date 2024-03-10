@@ -3,6 +3,7 @@ __pycache__/
 
 # Arquivo de configuração do ambiente virtual
 venv/
+env/
 
 # Arquivos de log
 *.log
