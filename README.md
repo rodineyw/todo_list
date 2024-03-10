@@ -30,7 +30,7 @@ Desenvolver um aplicativo to-do list em Python com Tkinter foi uma experiência 
 
 Espero que este artigo tenha sido útil para aqueles interessados em desenvolver aplicativos simples usando Python e Tkinter. Se você estiver interessado em aprender mais sobre o código-fonte do aplicativo ou tiver alguma dúvida, não hesite em entrar em contato!
 
-**Rod**
+[**Autor**](https://www.linkedin.com/in/rodineyw/)
 
 *Legal Operations | Formando em Internet das Coisas.*
 
